@@ -11,22 +11,32 @@ import java.util.Arrays;
  * Interface vs class exercise
  */
 public class Main {
-    /**
-     * See requests in the "to do" comments
-     * 
-     * @param args not used
-     */
-    public static void main(String[] args) {
-        // TODO: (1) put objects of (at least) three different types in this array
-        Vehicle[] vehicles = {};
-        System.out.println(Arrays.toString(vehicles));
+	/**
+	 * See requests in the "to do" comments
+	 * 
+	 * @param args not used
+	 */
+	public static void main(String[] args) {
+		// TODO: (1) put objects of (at least) three different types in this array
+		Vehicle[] vehicles = { new Bus(), new MotorBike(), new Car() };
+		System.out.println(Arrays.toString(vehicles));
 
-        // TODO: (2) let all vehicle steer in alternate directions
+		// TODO: (2) let all vehicle steer in alternate directions
+		for (int i = 0; i < vehicles.length; i++) {
+			if (i % 2 == 0) {
+				vehicles[i].steerLeft();
+			} else {
+				vehicles[i].steerRight();
+			}
+		}
 
-        // TODO: (3) put objects of (at least) three different types in this array
-        Conditioning[] conditionings = {};
-        System.out.println(Arrays.toString(conditionings));
+		// TODO: (3) put objects of (at least) three different types in this array
+		Conditioning[] conditionings = { new Flat(), new Bus(), new Car() };
+		System.out.println(Arrays.toString(conditionings));
 
-        // TODO: (4) set the temperature of each conditioned to 20
-    }
+		// TODO: (4) set the temperature of each conditioned to 20
+		for (int i = 0; i < conditionings.length; i++) {
+			conditionings[i].conditioning(20);
+		}
+	}
 }

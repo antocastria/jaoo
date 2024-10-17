@@ -13,12 +13,24 @@ import java.util.logging.Logger;
  * TODO: it should steer left/right, it should brake
  */
 public class Vehicle {
-    private static final Logger log = Logger.getGlobal();
+	private static final Logger log = Logger.getGlobal();
 
-    /**
-     * No-arg constructor
-     */
-    public Vehicle() {
-        log.info("Vehicle created");
-    }
+	public void steerLeft() {
+		log.info("steerLeft");
+	}
+
+	public void steerRight() {
+		log.info("steerRight");
+	}
+
+	public void brake() {
+		log.info("brake");
+	}
+
+	/**
+	 * No-arg constructor
+	 */
+	public Vehicle() {
+		log.info("Vehicle created");
+	}
 }

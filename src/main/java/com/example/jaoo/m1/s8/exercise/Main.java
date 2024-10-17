@@ -23,5 +23,19 @@ public class Main {
         Circle circle = new Circle(4.0);
         System.out.println("Area is: " + circle.area());
         System.out.println("Perimeter is: " + circle.perimeter());
+        
+        Triangle triangolo = new Triangle(3, 4, 5.5);
+        System.out.println(triangolo.getArea());
+        System.out.println(triangolo.getPerimetro());
+        
+        String s = "10000";  //da stringa a intero
+        int x;
+        x = Integer.parseInt(s + "23");
+        System.out.println(x + s);
+        
+        String t= triangolo.toString();
+        System.out.println(t);
+        
+       
     }
 }

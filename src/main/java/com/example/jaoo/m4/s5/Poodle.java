@@ -10,22 +10,30 @@ package com.example.jaoo.m4.s5;
  * in toString()
  */
 public class Poodle extends Dog {
-    private String owner;
+	private String owner;
 
-    /**
-     * Canonical constructor
-     * 
-     * @param name  dog name
-     * @param owner dog owner
-     */
-    public Poodle(String name, String owner) {
-        super(name);
+	/**
+	 * Canonical constructor
+	 * 
+	 * @param name  dog name
+	 * @param owner dog owner
+	 */
+	public Poodle(String name, String owner) {
+		super(name);
 
-        this.owner = owner;
-    }
+		this.owner = owner;
+	}
 
-    @Override
-    public String toString() {
-        return "Poodle [owner=" + owner + ", " + super.toString() + "]";
-    }
+	public void bark() {
+		System.out.println("grr ...");
+		super.bark();
+		System.out.println("... grr ");
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public String toString() {
+		return "Poodle [owner=" + owner + ", toString()=" + super.toString() + "]";
+	}
+
 }

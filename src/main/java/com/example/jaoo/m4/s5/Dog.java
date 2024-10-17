@@ -24,4 +24,9 @@ public class Dog {
     public String toString() {
         return "Dog [name=" + name + "]";
     }
+
+	public void bark() {
+		// TODO Auto-generated method stub
+		
+	}
 }

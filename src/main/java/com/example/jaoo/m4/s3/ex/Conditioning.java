@@ -11,4 +11,5 @@ package com.example.jaoo.m4.s3.ex;
  * TODO: provide an abstract method to set the temperature to a given value
  */
 public interface Conditioning {
+	public abstract void conditioning(int temperature);
 }

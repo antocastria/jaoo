@@ -46,7 +46,7 @@ public class Dog {
             return;
         }
         for (int i = 0; i < name.length(); i++) {
-            if (!Character.isLetter(name.charAt(i))) {
+            if (!Character.isLetter(name.charAt(i))) {  //se mi hai passato qualcosa che non è un carattere, non lo accetto
                 log.warning(String.format("User tried to set name to [%s]", name));
                 return;
             }

@@ -10,13 +10,13 @@ import java.util.logging.Logger;
 /**
  * TODO: MotorBike is-a Vehicle
  */
-public class MotorBike {
-    private static final Logger log = Logger.getGlobal();
+public class MotorBike extends Vehicle {
+	private static final Logger log = Logger.getGlobal();
 
-    /**
-     * No-arg constructor
-     */
-    public MotorBike() {
-        log.info("MotorBike created");
-    }
+	/**
+	 * No-arg constructor
+	 */
+	public MotorBike() {
+		log.info("MotorBike created");
+	}
 }

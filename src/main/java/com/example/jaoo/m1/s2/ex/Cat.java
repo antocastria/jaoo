@@ -9,5 +9,19 @@ package com.example.jaoo.m1.s2.ex;
  * Exercise: Complete the Cat class definition
  */
 public class Cat {
-    // TODO: define the method meow() that prints "meow!" to standard output
+	private int happiness;
+
+	// TODO: define the method meow() that prints "meow!" to standard output
+	Cat() {
+		this.happiness = 0;
+	}
+
+	void pet() {
+		System.out.println("*carezza*");
+		happiness += 1;
+	}
+
+	public int gethappiness() {
+		return happiness;
+	}
 }

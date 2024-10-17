@@ -33,7 +33,7 @@ public class Dog extends Pet {
      * @param name dog name
      */
     public Dog(String name) {
-        this(name, STANDARD_SPEED);
+        this(name, STANDARD_SPEED); // oppure super(name) e this.speed= STANDARD_SPEED
     }
 
     /**
